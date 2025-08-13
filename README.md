@@ -59,33 +59,33 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Core Features
 
-| Feature | Durable Functions | AWS Step Functions | Google Cloud Workflows |
+| **Feature** | **Durable Functions** | **AWS Step Functions** | **Google Cloud Workflows** |
 | --- | --- | --- | --- |
-| Orchestration | Chaining, Fan-out/Fan-in, Human Interaction | State machine-based, Retry policies | YAML/JSON-based workflow definitions |
-| State Management | Built-in | Requires Amazon States Language | Limited native state handling |
+| **Orchestration** | Chaining, Fan-out/Fan-in, Human Interaction | State machine-based, Retry policies | YAML/JSON-based workflow definitions |
+| **State Management** | Built-in | Requires Amazon States Language | Limited native state handling |
 
 ### Integration Options
 
 #### Azure Durable Functions
 
-Integrations: Works seamlessly with Service Bus, Event Grid, Blob Storage, Cosmos DB and supports HTTP APIs for external triggers.
-CI/CD: Deploy Azure DevOps, GitHub Actions, ARM templates.
+**Integrations**: Works seamlessly with Service Bus, Event Grid, Blob Storage, Cosmos DB and supports HTTP APIs for external triggers.
+**CI/CD**: Deploy Azure DevOps, GitHub Actions, ARM templates.
 
 #### AWS Step Functions
 
-AWS Service Integrations: connect with Lambda, DynamoDB, ECS, SageMaker and supports API Gateway for HTTP triggers.
-CI/CD: Deploy AWS SAM, CloudFormation, Terraform.
+**Integrations**: connect with Lambda, DynamoDB, ECS, SageMaker and supports API Gateway for HTTP triggers.
+**CI/CD**: Deploy AWS SAM, CloudFormation, Terraform.
 
 #### Google Cloud Workflows
 
-GCP Service Integrations: Connects to Cloud Functions, Pub/Sub, BigQuery, Firestore and Supports HTTP endpoints (REST APIs).
-CI/CD: Deploy via gcloud CLI, Terraform.
+**GCP Service Integrations**: Connects to Cloud Functions, Pub/Sub, BigQuery, Firestore and Supports HTTP endpoints (REST APIs).
+**CI/CD**: Deploy via gcloud CLI, Terraform.
 
 ### Monitoring and Observability
 
-Azure Durable Functions: used Azure Monitor and Application Insights to tracks orchestration history, execution time and failures.
-AWS Step Functions: used CloudWatch Logs and X-Ray to Provides execution timelines, state transitions and errors.
-Google Cloud Workflows: used Cloud Logging and Cloud Monitoring to logs workflow execution steps, duration, errors.
+-   **Azure Durable Functions**: used Azure Monitor and Application Insights to tracks orchestration history, execution time and failures.
+-   **AWS Step Functions**: used CloudWatch Logs and X-Ray to Provides execution timelines, state transitions and errors.
+-   **Google Cloud Workflows**: used Cloud Logging and Cloud Monitoring to logs workflow execution steps, duration, errors.
 
 ### Pricing Model
 
@@ -103,11 +103,11 @@ Google Cloud Workflows: used Cloud Logging and Cloud Monitoring to logs workflow
 
 ### Core Features
 
-| Azure            | Azure Logic Apps                                | AWS Step Functions (Express)     | Google Cloud Workflows                  |
-| ---------------- | ----------------------------------------------- | -------------------------------- | --------------------------------------- |
-| Triggers         | HTTP, Timer, Connectors (Office 365, SQL, etc.) | EventBridge, API Gateway, Lambda | HTTP, Pub/Sub, Cloud Scheduler          |
-| Integration      | 300+ SaaS/enterprise connectors                 | Tight Lambda integration         | GCP-native services (Pub/Sub, BigQuery) |
-| State Management | Stateless (Standard) / Stateful                 | Stateless (Express mode)         | Limited state support                   |
+| **Azure**            | **Azure Logic Apps**                            | **AWS Step Functions (Express)** | **Google Cloud Workflows**              |
+| -------------------- | ----------------------------------------------- | -------------------------------- | --------------------------------------- |
+| **Triggers**         | HTTP, Timer, Connectors (Office 365, SQL, etc.) | EventBridge, API Gateway, Lambda | HTTP, Pub/Sub, Cloud Scheduler          |
+| **Integration**      | 300+ SaaS/enterprise connectors                 | Tight Lambda integration         | GCP-native services (Pub/Sub, BigQuery) |
+| **State Management** | Stateless (Standard) / Stateful                 | Stateless (Express mode)         | Limited state support                   |
 
 ### Pricing Model
 
