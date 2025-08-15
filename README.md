@@ -4,7 +4,7 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ## Azure Functions
 
-| Azure Service | AWS | Google Cloud |
+| **Azure Service** | **AWS** | **Google Cloud** |
 | --- | --- | --- |
 | Azure Functions | Lambda | Cloud Functions |
 
@@ -15,11 +15,11 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Core Features
 
-| Feature | Azure Functions | Lambda | Cloud Functions |
+| **Feature** | **Azure Functions** | **Lambda** | **Cloud Functions** |
 | --- | --- | --- | --- |
-| Triggers | HTTP, Timer, Blob, Database, Event Grid, Service Bus, | API Gateway, S3, DynamoDB, SQS, EventBridge | HTTP, Pub/Sub, Cloud Storage, Firestore |
-| Bindings | Input/Output bindings like Blob Storage and Cosmos DB) | uses SDKs to have limited binding | uses client libraries for limited binding | 
-| Languages | C#, JavaScript, Python, Java, PowerShell | Node.js, Python, Java, Go, Ruby, .NET | Node.js, Python, Go, Java, .NET | 
+| **Triggers** | HTTP, Timer, Blob, Database, Event Grid, Service Bus, | API Gateway, S3, DynamoDB, SQS, EventBridge | HTTP, Pub/Sub, Cloud Storage, Firestore |
+| **Bindings** | Input/Output bindings like Blob Storage and Cosmos DB) | uses SDKs to have limited binding | uses client libraries for limited binding | 
+| **Languages** | C#, JavaScript, Python, Java, PowerShell | Node.js, Python, Java, Go, Ruby, .NET | Node.js, Python, Go, Java, .NET | 
 
 ### Integration Options
 
@@ -41,13 +41,16 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Strengths & Weaknesses
 
+#### Strengths
+
 -   **Azure Functions**: Strong bindings, Durable Functions for workflows.
 -   **Lambda**: Broadest event source integrations, mature ecosystem.
 -   **Cloud Functions**: Simpler for Google-native services, but fewer bindings.
 
+
 ## Durable Functions
 
-| Azure Service | AWS | Google Cloud |
+| **Azure Service** | **AWS** | **Google Cloud** |
 | --- | --- | --- |
 | Durable Functions | AWS Step Functions | Google Cloud Workflows |
 
@@ -95,6 +98,10 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ## Azure Logic Apps 
 
+| **Azure Service** | **AWS** | **Google Cloud** |
+| --- | --- | --- |
+| Azure Logic Apps | AWS Step Functions | Google Cloud Workflows |
+
 ### Overview
 
 -   **Azure Logic Apps**: Low-code workflow automation.
@@ -103,11 +110,11 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Core Features
 
-| **Azure**            | **Azure Logic Apps**                            | **AWS Step Functions (Express)** | **Google Cloud Workflows**              |
+| **Azure** | **Azure Logic Apps** | **AWS Step Functions (Express)** | **Google Cloud Workflows** |
 | --- | --- | --- | --- |
-| **Triggers**         | HTTP, Timer, Connectors (Office 365, SQL, etc.) | EventBridge, API Gateway, Lambda | HTTP, Pub/Sub, Cloud Scheduler          |
-| **Integration**      | 300+ SaaS/enterprise connectors                 | Tight Lambda integration         | GCP-native services (Pub/Sub, BigQuery) |
-| **State Management** | Stateless (Standard) / Stateful                 | Stateless (Express mode) | Limited state support                   |
+| **Triggers** | HTTP, Timer, Connectors (Office 365, SQL, etc.) | EventBridge, API Gateway, Lambda | HTTP, Pub/Sub, Cloud Scheduler |
+| **Integration** | 300+ SaaS/enterprise connectors | Tight Lambda integration | GCP-native services (Pub/Sub, BigQuery) |
+| **State Management** | Stateless (Standard) / Stateful | Stateless (Express mode) | Limited state support |
 
 ### Integration Options
 
@@ -129,11 +136,17 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Strengths & Weaknesses
 
+#### Strengths
+
 -   **Azure Logic Apps**: Best for enterprise integrations (e.g., SharePoint, SAP).
 -   **AWS Step Functions**: Faster execution (Express mode), but fewer pre-built connectors.
 -   **Google Cloud Workflows**:  Simple YAML definition but limited to GCP ecosystem.
 
 ## Azure Service Bus
+
+| **Azure Service** | **AWS** | **Google Cloud** |
+| --- | --- | --- |
+| Azure Service Bus | AWS SQS/SNS | Google Pub/Sub |
 
 ### Overview
 
@@ -169,11 +182,17 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Strengths & Weaknesses
 
+#### Strengths
+
 -   **Azure Service Bus**: Advanced features (sessions, dead-lettering), but complex pricing.
 -   **AWS SQS/SNS**: Simpler pricing, but no built-in topic filtering (requires SNS + Lambda).
 -   **Google Pub/Sub**: Fully managed, global, but lacks FIFO without workarounds.
 
 ## Azure Event Grid
+
+| **Azure Service** | **AWS** | **Google Cloud** |
+| --- | --- | --- |
+| Azure Event Grid | AWS EventBridge | Google Eventarc |
 
 ### Overview
 
@@ -215,6 +234,10 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 -   **Google Eventarc**: Tightly coupled with GCP services (e.g., Cloud Run).
 
 ## Azure Event Hubs
+
+| **Azure Service** | **AWS** | **Google Cloud** |
+| --- | --- | --- |
+| Azure Event Hubs | AWS Kinesis | Google Pub/Sub |
 
 ### Overview
 
