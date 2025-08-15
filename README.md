@@ -144,6 +144,7 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 ### Core Features
 
 | **Feature** | **Azure Service Bus** | **AWS SQS/SNS** | **Google Pub/Sub** |
+| --- | --- | --- | --- |
 | **Messaging Patterns** | Queues, Topics (Pub/Sub) | SQS (Queues), SNS (Pub/Sub) | Pub/Sub only |
 | **Ordering** | FIFO (Premium tier) | FIFO queues (SQS) | No native FIFO (requires client-side handling) |
 | **Dead-lettering** | Supported | Supported (SQS) | Supported |
@@ -183,6 +184,7 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 ### Core Features
 
 | **Feature** | **Azure Event Grid** | **AWS EventBridge** | **Google Eventarc** |
+| --- | --- | --- | --- |
 | **Event Sources** | Azure services, custom topics | AWS services, SaaS partners | GCP services, Audit Logs |
 | **Targets** | Functions, Logic Apps, Webhooks | Lambda, SQS, SNS, Step Functions | Cloud Run, Functions, Workflows |
 | **Schema Support** | Custom schemas | Schema Registry (discovery) | Limited (CloudEvents) |
