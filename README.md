@@ -223,6 +223,7 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 ### Core Features
 
 | **Feature** | **Azure Event Hubs** | **AWS Kinesis** | **Google Pub/Sub** |
+| --- | --- | --- | --- |
 | **Throughput** | Millions/sec (scalable) | Shard-based scaling (manual) | Auto-scaling |
 | **Retention** | 1-7 days (configurable) | Up to 365 days (Kinesis) | 7 days (default) |
 | **Integrations** | Stream Analytics, Functions | Lambda, Firehose, Redshift | Dataflow, BigQuery |
@@ -254,6 +255,7 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 ## Final Comparison Summary (Expanded)
 
 | **Service Category** | **Azure Service** | **AWS Equivalent** | **GCP Equivalent** | **Key Differentiator** |
+| --- | --- | --- | --- | --- |
 | **Workflow Automation** | Logic Apps | Step Functions | Cloud Workflows | Azure: Connectors; AWS: Speed; GCP: YAML |
 | **Messaging** | Service Bus | SQS/SNS | Pub/Sub | Azure: Enterprise; AWS: Simple; GCP: Global |
 | **Event Routing** | Event Grid | EventBridge | Eventarc | AWS: Schema Registry; GCP: GCP-native |
