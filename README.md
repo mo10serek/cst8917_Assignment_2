@@ -101,6 +101,20 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 -   **AWS Step Functions**: Pay per state transition (Standard: $0.025/1K transitions; Express: $0.10/1M transitions).
 -   **Google Cloud Workflows**: Pay per step execution ($0.01/1K steps) and external HTTP calls ($0.40/1M calls).
 
+### Strengths & Weaknesses
+
+#### Strengths
+
+-   **Azure Durable Functions**: Wins with native orchestration (fan-out, human approval).
+-   **AWS Step Functions**: Excels with broad service integrations.
+-   **Google Cloud Workflows**: lightweight and cost-effective.
+
+#### Weakness
+
+-   **Azure Durable Functions**: Hard to test locally and Orchestrator function can add latency to the performance.
+-   **AWS Step Functions**: Standard Workflow charge per state transition and have integration limits with max of 25,000 event history entries.
+-   **Google Cloud Workflows**: Limited error handling, few pre-built connectors, and have 1 hour maximum duration 
+
 ## Azure Logic Apps 
 
 | **Azure Service** | **AWS** | **Google Cloud** |
