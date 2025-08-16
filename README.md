@@ -47,6 +47,11 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 -   **Lambda**: Broadest event source integrations, mature ecosystem.
 -   **Cloud Functions**: Simpler for Google-native services, but fewer bindings.
 
+#### Weakness
+
+- **Azure Functions**: Cause a Cold Start in the Consumption plan and have complex debugging issues
+- **Lambda**: have a soft limit of 1000 executions, 15-minute maximum execution time
+- **Cloud Functions**: don't have VPC Connector in first gen and have basic logging/metrics.
 
 ## Durable Functions
 
@@ -142,6 +147,12 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 -   **AWS Step Functions**: Faster execution (Express mode), but fewer pre-built connectors.
 -   **Google Cloud Workflows**:  Simple YAML definition but limited to GCP ecosystem.
 
+#### Weakness
+
+- **Azure Logic Apps**: Slower execution than code-based solutions and Enterprise connectors cost extra.
+- **AWS Step Functions**: Graphical UI becomes unusable for complex workflows and only have a limit of 1MB state size.
+- **Google Cloud Workflows**: Missing features for complex workflows and low visability in execution flow.
+
 ## Azure Service Bus
 
 | **Azure Service** | **AWS** | **Google Cloud** |
@@ -188,6 +199,12 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 -   **AWS SQS/SNS**: Simpler pricing, but no built-in topic filtering (requires SNS + Lambda).
 -   **Google Pub/Sub**: Fully managed, global, but lacks FIFO without workarounds.
 
+#### Weaknesses
+
+- **Azure Service Bus**: Complex Pricing Model that has multiple tiers and extra cost for peek-lock and scheduled messages
+- **AWS Lambda**: Need to combined SQS and SNS for full functionality and reqire custome implementation for messging grouping
+- **Google Pub/Sub**: contain Cold Start issues and contain complexity to the message consumption.
+
 ## Azure Event Grid
 
 | **Azure Service** | **AWS** | **Google Cloud** |
@@ -229,9 +246,17 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Strengths & Weaknesses
 
+#### Strengths
+
 -   **Azure Event Grid**: Deep Azure integration, low latency.
 -   **AWS EventBridge**: Best for multi-account/multi-region (Event Bus).
 -   **Google Eventarc**: Tightly coupled with GCP services (e.g., Cloud Run).
+
+#### Weaknesses
+
+-   **Azure Event Grid**: Limited third-party/SaaS integration and custom topic management requires ARM template
+-   **AWS EventBridge**: Steep Learning Curve that need to learn multiple concepts such as bussess, rules, and archive and complex IAM permissions requred
+-   **Google Eventarc**: Limited event sources and tranformation capabilities.
 
 ## Azure Event Hubs
 
@@ -273,9 +298,17 @@ In the course, we learn a lot of different services in Azure cloud that uses for
 
 ### Strengths & Weaknesses
 
+#### Strengths
+
 -   **Azure Event Hubs**: Best for Azure-centric streaming pipelines.
 -   **AWS Kinesis**: Flexible retention (Kinesis), but manual shard management.
 -   **Google Pub/Sub**: Simpler auto-scaling, but shorter retention.
+
+#### Weaknesses
+
+- **Azure Event Hubs**: Need to manual scale which cause downtime, and have complex pricing.
+- **AWS Kinesis**: Scaling needed resharding operations and need to understand alot of partition keys.
+- **Google Pub/Sub**: Messages may come out of order, limited metrics, and quotas might require special requests for high-volume use.
 
 ## Final Comparison Summary (Expanded)
 
